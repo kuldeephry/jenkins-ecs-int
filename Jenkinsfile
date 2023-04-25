@@ -7,7 +7,7 @@ pipeline {
 	SERVICE_NAME="nodejs-container-service"
 	TASK_DEFINITION_NAME="first-run-task-definition"
 	DESIRED_COUNT="1"
-        IMAGE_REPO_NAME="517167614182.dkr.ecr.us-west-1.amazonaws.com/hello-world"
+        IMAGE_REPO_NAME=".dkr.ecr.us-west-1.amazonaws.com/hello-world"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 	registryCredential = "AKIAXQ2MXRDTLYFSDDN3"
