@@ -10,7 +10,7 @@ pipeline {
         IMAGE_REPO_NAME="hello-world"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-	registryCredential = "cad426a7-741b-499c-9dad-046ad3a834fb"
+	registryCredential = "jenkins-aws"
     }
    
     stages {
